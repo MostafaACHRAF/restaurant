@@ -2,44 +2,45 @@ package service;
 
 import java.util.*;
 
-class ServiceMan {
-
-    private final List<CustomerOrder> customersOrders = new ArrayList<CustomerOrder>();
+class Waiter {
+    private int tableId;
+    private final List<Order> orders = new ArrayList<Order>();
     private final HashMap<String, Integer> oneOrderForRegister = new HashMap<String, Integer>();
 
-    void noteWhatCustomerSays(int tableId, String customerOrderData) {
-        String[] extractedData = customerOrderData.split(": ");
+    void noteWhatCustomerSays(int tableId, String customerSay) {
+        String[] extractedData = customerSay.split(": ");
         String customerName = extractedData[0];
-        String orderContent = extractedData[1];
+        String customerOrder = extractedData[1];
 
-        if (isSame(orderContent)) {
-            if (customersOrders.isEmpty())
+        if (isSame(customerOrder)) {
+            if (orders.isEmpty())
                 throw new IllegalSameOrder();
-            orderContent = getLastCustomerOrderContent();
-            customersOrders.add(new CustomerOrder(tableId, customerName, orderContent));
-        } else if (isOneOrderForNCustomer(orderContent)) {
-            String order = getOrderContentFrom(orderContent);
-            int nbrOfCustomers = getNumberOfExpectedCustomersFor(orderContent);
+            customerOrder = getLastCustomerOrderContent();
+            orders.add(new Order(tableId, customerName, customerOrder));
+        } else if (isOneOrderForNCustomer(customerOrder)) {
+            String order = getOrderContentFrom(customerOrder);
+            int nbrOfCustomers = getNumberOfExpectedCustomersFor(customerOrder);
             oneOrderForRegister.put(order, nbrOfCustomers);
 
             if (!oneOrderForRegister.isEmpty()) {
-                if (oneOrderForRegister.containsKey(orderContent)) {
-                    int nbrCustomers = oneOrderForRegister.get(orderContent);
+                if (oneOrderForRegister.containsKey(customerOrder)) {
+                    int nbrCustomers = oneOrderForRegister.get(customerOrder);
                     --nbrCustomers;
-                    oneOrderForRegister.put(orderContent, nbrCustomers);
+                    oneOrderForRegister.put(customerOrder, nbrCustomers);
                 }
             }
         } else
             throw new RuntimeException("hmmmm I don't understand what you say !!");
+        orders.add(new Order(tableId, customerName, customerOrder));
     }
 
-    String createNewOrder(int tableId) {
-        Table table = new TablesFactory().get(tableId);
-        for (CustomerOrder customerOrder : customersOrders) {
+    String createNewOrderFor(int tableId) {
+        Table table = new TableFactory().create(tableId);
+        for (Order customerOrder : orders) {
             if (tableId == customerOrder.getTableId())
-                table.addNewCustomerOrder(customerOrder);
+                table.addNewOrderContent(customerOrder.getContent());
         }
-        return table.getOrder();
+        return table.getOrdersContent();
     }
 
     private boolean isSame(String orderContent) {
@@ -47,9 +48,9 @@ class ServiceMan {
     }
 
     private String getLastCustomerOrderContent() {
-        int lastCustomerOrderIndex = customersOrders.size() - 1;
-        CustomerOrder lastCustomerOrder = customersOrders.get(lastCustomerOrderIndex);
-        return lastCustomerOrder.getOrderContent();
+        int lastCustomerOrderIndex = orders.size() - 1;
+        Order lastCustomerOrder = orders.get(lastCustomerOrderIndex);
+        return lastCustomerOrder.getContent();
     }
 
     private boolean isOneOrderForNCustomer(String orderContent) {
