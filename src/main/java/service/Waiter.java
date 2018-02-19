@@ -1,6 +1,7 @@
 package service;
 
 import java.util.*;
+import java.util.function.Consumer;
 
 class Waiter {
     private int tableId;
@@ -14,27 +15,31 @@ class Waiter {
 
         if (isSame(customerOrder)) {
             if (orders.isEmpty())
-                throw new IllegalSameOrder();
+                //throw new IllegalSameOrder();
+                System.out.println("same has no previous !!");
             customerOrder = getLastCustomerOrderContent();
-            orders.add(new Order(tableId, customerName, customerOrder));
         } else if (isOneOrderForNCustomer(customerOrder)) {
             String order = getOrderContentFrom(customerOrder);
             int nbrOfCustomers = getNumberOfExpectedCustomersFor(customerOrder);
-            oneOrderForRegister.put(order, nbrOfCustomers);
-
-            if (!oneOrderForRegister.isEmpty()) {
-                if (oneOrderForRegister.containsKey(customerOrder)) {
-                    int nbrCustomers = oneOrderForRegister.get(customerOrder);
-                    --nbrCustomers;
-                    oneOrderForRegister.put(customerOrder, nbrCustomers);
-                }
+            if (oneOrderForRegister.containsKey(order)) {
+                nbrOfCustomers = oneOrderForRegister.get(order);
+                --nbrOfCustomers;
             }
-        } else
-            throw new RuntimeException("hmmmm I don't understand what you say !!");
+            oneOrderForRegister.put(order, nbrOfCustomers);
+        }
         orders.add(new Order(tableId, customerName, customerOrder));
+
     }
 
     String createNewOrderFor(int tableId) {
+
+         Set<Map.Entry<String, Integer>> entries = oneOrderForRegister.entrySet();
+
+         for (Map.Entry<String, Integer> entry : entries) {
+             if (entry.getValue() > 0)
+                 System.out.println("MISSING " + entry.getValue() + " for " + entry.getKey());
+         }
+
         Table table = new TableFactory().create(tableId);
         for (Order customerOrder : orders) {
             if (tableId == customerOrder.getTableId())
