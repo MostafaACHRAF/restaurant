@@ -1,43 +1,58 @@
 package service;
 
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 
-public class Table {
-    private final int placesCount;
-    private List<CustomerOrder> customersOrders;
-
-    Table(int placesCount) {
-        this.placesCount = placesCount;
-        this.customersOrders = new ArrayList<CustomerOrder>();
+class Table {
+    private final int customersNumber;
+    private final List<String> ordersContent = new ArrayList<String>();
+    Table(int customersNumber) {
+        this.customersNumber = customersNumber;
     }
 
-    public String createNewOrder() {
-        return displayOrdersDescription();
+//    private String displayOrdersDescription() {
+//        StringBuilder ordersDescriptionDisplay = new StringBuilder();
+//        int index = 0;
+//        for (CustomerOrder customerOrder : customersOrders) {
+//            ordersDescriptionDisplay.append(customerOrder);
+//            appendComma(index, ordersDescriptionDisplay);
+//            index++;
+//        }
+//        return String.valueOf(ordersDescriptionDisplay);
+//    }
+
+//    private void appendComma(int index, StringBuilder ordersDisplay) {
+//        if (index != customersOrders.size() - 1)
+//            ordersDisplay.append(", ");
+//    }
+
+
+    public int getCustomersNumber() {
+        return customersNumber;
     }
 
-    private String displayOrdersDescription() {
-        StringBuilder ordersDescDisplay = new StringBuilder();
+    void addNewOrderContent(String orderContent) {
+        ordersContent.add(orderContent);
+    }
+
+    String getOrdersContent() {
+        StringBuilder builder = new StringBuilder();
         int index = 0;
-        for (String orderDesc: allOrdersDescription) {
-            ordersDescDisplay.append(orderDesc);
-            appendComma(index, ordersDescDisplay);
-            index++;
+        for (String content : ordersContent) {
+            builder.append(content);
+            if (index != ordersContent.size() - 1)
+                builder.append(", ");
         }
-        return String.valueOf(ordersDescDisplay);
+        return String.valueOf(builder);
     }
 
-
-
-    private void appendComma(int index, StringBuilder ordersDisplay) {
-        if (index != allOrdersDescription.size() - 1)
-            ordersDisplay.append(", ");
-    }
-
-    public void addNewCustomerOrder(String customerName, String customerOrder) {
-        Order order = new Order(customerOrder);
-        Customer customer = new Customer(customerName);
-        customersOrders.add(new CustomerOrder(customer, order));
-    }
+//    boolean isCustomersOrdersEmpty() {
+//        return customersOrders.isEmpty();
+//    }
+//
+//    String getLastOrderDescription() {
+//        //return customersOrders.get(customersOrders.size() - 1);
+//        return "";
+//    }
 }
