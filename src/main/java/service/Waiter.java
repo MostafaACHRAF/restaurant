@@ -1,10 +1,9 @@
 package service;
 
 import java.util.*;
-import java.util.function.Consumer;
 
 class Waiter {
-    private int tableId;
+
     private final List<Order> orders = new ArrayList<Order>();
     private final HashMap<String, Integer> oneOrderForRegister = new HashMap<String, Integer>();
 

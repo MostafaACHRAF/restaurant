@@ -1,6 +1,6 @@
 package service;
 
-public class Order {
+public abstract class Order {
     private int tableId;
     private String customer;
     private String content;
