@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Restaurant {
+
     private final List<Table> tables = new ArrayList<Table>();
     private final Waiter waiter = new Waiter();
 
@@ -19,25 +20,5 @@ public class Restaurant {
     public String createOrder(int tableId) {
         return waiter.createNewOrderFor(tableId);
     }
-
-//    private String extractCustomerOrder(int tableId, String orderDescription) {
-//        if (isSameOrderAndNotTheFirst(tableId, orderDescription)) {
-//            orderDescription = getPreviousOrderDescription(tableId);
-//        }
-//        return orderDescription;
-//    }
-
-//    private boolean isSameOrderAndNotTheFirst(int tableId, String orderDescription) {
-//        return isSameOrder(orderDescription) && !tables.get(tableId).isCustomersOrdersEmpty();
-//    }
-//
-//    private boolean isSameOrder(String orderDescription) {
-//        return orderDescription.equals("Same");
-//    }
-//
-//    private String getPreviousOrderDescription(int tableId) {
-//        return tables.get(tableId).getLastOrderDescription();
-//    }
-
 
 }

@@ -1,75 +1,75 @@
 package service;
 
-import java.util.*;
-import java.util.function.Consumer;
+import java.util.ArrayList;
+import java.util.List;
 
 class Waiter {
-    private int tableId;
+
     private final List<Order> orders = new ArrayList<Order>();
-    private final HashMap<String, Integer> oneOrderForRegister = new HashMap<String, Integer>();
 
     void noteWhatCustomerSays(int tableId, String customerSay) {
-        String[] extractedData = customerSay.split(": ");
-        String customerName = extractedData[0];
-        String customerOrder = extractedData[1];
+        OrderFactory orderFactory = new OrderFactory(orders);
+        Order customerOrder = orderFactory.create(tableId, customerSay);
+        addOrderToOrdersList(customerOrder);
+    }
 
-        if (isSame(customerOrder)) {
-            if (orders.isEmpty())
-                //throw new IllegalSameOrder();
-                System.out.println("same has no previous !!");
-            customerOrder = getLastCustomerOrderContent();
-        } else if (isOneOrderForNCustomer(customerOrder)) {
-            String order = getOrderContentFrom(customerOrder);
-            int nbrOfCustomers = getNumberOfExpectedCustomersFor(customerOrder);
-            if (oneOrderForRegister.containsKey(order)) {
-                nbrOfCustomers = oneOrderForRegister.get(order);
-                --nbrOfCustomers;
-            }
-            oneOrderForRegister.put(order, nbrOfCustomers);
+//    private boolean isSameOrder(Order customerOrder) {
+//        return customerOrder instanceof SameOrder;
+//    }
+//
+//    private boolean isOrderForAlreadyExist(Order customerOrder) {
+//        return getAllOrdersFor().contains(customerOrder);
+//    }
+//
+//    private Order getLastCustomerOrder() {
+//        return orders.get(orders.size() - 1);
+//    }
+
+    private List<Order> getAllOrdersFor() {
+        List<Order> allOrdersFor = new ArrayList<Order>();
+        for (Order order : orders) {
+            if (isOrderFor(order))
+                allOrdersFor.add(order);
         }
-        orders.add(new Order(tableId, customerName, customerOrder));
+        return allOrdersFor;
+    }
 
+    private boolean isOrderFor(Order customerOrder) {
+        return customerOrder instanceof OrderFor;
     }
 
     String createNewOrderFor(int tableId) {
-
-         Set<Map.Entry<String, Integer>> entries = oneOrderForRegister.entrySet();
-
-         for (Map.Entry<String, Integer> entry : entries) {
-             if (entry.getValue() > 0)
-                 System.out.println("MISSING " + entry.getValue() + " for " + entry.getKey());
-         }
-
-        Table table = new TableFactory().create(tableId);
-        for (Order customerOrder : orders) {
-            if (tableId == customerOrder.getTableId())
-                table.addNewOrderContent(customerOrder.getContent());
+        StringBuilder builder = new StringBuilder();
+        //List<Order> tableOrders = getTableOrders(tableId);
+        int index = 0;
+        for (Order order : orders) {
+            builder.append(order);
+            if (index != orders.size() - 1)
+                builder.append(", ");
+            index++;
         }
-        return table.getOrdersContent();
+        return String.valueOf(builder);
     }
 
-    private boolean isSame(String orderContent) {
-        return orderContent.equals("Same");
+    private void addOrderToOrdersList(Order customerOrder) {
+        if(!isOrderExist(customerOrder))
+            orders.add(customerOrder);
     }
 
-    private String getLastCustomerOrderContent() {
-        int lastCustomerOrderIndex = orders.size() - 1;
-        Order lastCustomerOrder = orders.get(lastCustomerOrderIndex);
-        return lastCustomerOrder.getContent();
+    private boolean isOrderExist(Order customerOrder) {
+        for (Order order : orders)
+            if (order.equals(customerOrder))
+                return true;
+        return false;
     }
 
-    private boolean isOneOrderForNCustomer(String orderContent) {
-        String[] orderContentDetails = orderContent.split(" ");
-        return orderContentDetails.length == 3 && orderContentDetails[1].equals("for");
-    }
-
-    private int getNumberOfExpectedCustomersFor(String orderContent) {
-        return Integer.valueOf(orderContent.split(" ")[2]);
-    }
-
-    private String getOrderContentFrom(String orderContent) {
-        return orderContent.split(" ")[0];
-    }
-
+//    private List<Order> getTableOrders(int tableId) {
+//        List<Order> tableOrders = new ArrayList<Order>();
+//        for (Order order : orders) {
+//            if (order.getTableId() == tableId)
+//                tableOrders.add(order);
+//        }
+//        return tableOrders;
+//    }
 
 }
