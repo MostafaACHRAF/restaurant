@@ -7,38 +7,44 @@ class OrderFactory {
 
     private String customerName;
     private String customerOrder;
-    private List<Order> orders;
+    private List<Order> orders = new ArrayList<Order>();
 
     OrderFactory(List<Order> orders) {
         this.orders.addAll(orders);
     }
 
     Order create(int tableId, String customerSays) {
-        String[] extractedData = customerSays.split(": ");
-        customerName = extractedData[0];
-        customerOrder = extractedData[1];
+        extractDataFrom(customerSays);
         Order order = new NormalOrder(tableId, customerName, customerOrder);
 
         if (isOrderFor(customerOrder)) {
-            return new OrderForCreator(order, getAllOrdersFor(), getNumberOfExpectedCustomersFor()).create();
+            OrderFor orderFor = new OrderForCreator(order, getAllOrdersFor(), getNumberOfExpectedCustomersFor()).create();
+            System.out.println("--*--not exist before " + orderFor.getNbrOfExpectedCustomers());
+            return orderFor;
         } else if (isSame(customerOrder)) {
-            order.setContent(getLastCustomerOrderContent());
+            order.content = getLastCustomerOrderContent();
             return new SameOrderCreator(order).create();
         }
         return order;
     }
 
-    private List<Order> getAllOrdersFor() {
-        List<Order> allOrdersFor = new ArrayList<Order>();
+    private void extractDataFrom(String customerSays) {
+        String[] extractedData = customerSays.split(": ");
+        this.customerName = extractedData[0];
+        this.customerOrder = extractedData[1];
+    }
+
+    private List<OrderFor> getAllOrdersFor() {
+        List<OrderFor> allOrdersFor = new ArrayList<OrderFor>();
         for (Order order : orders)
             if (order instanceof OrderFor)
-                allOrdersFor.add(order);
+                allOrdersFor.add((OrderFor) order);
         return allOrdersFor;
     }
 
     private boolean isOrderFor(String customerOrder) {
         String[] orderContentDetails = customerOrder.split(" ");
-        return orderContentDetails.length == 3 && orderContentDetails[1].equals("for");
+        return  orderContentDetails.length == 3 && orderContentDetails[1].equals("for");
     }
 
     private String getLastCustomerOrderContent() {

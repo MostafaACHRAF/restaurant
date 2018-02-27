@@ -6,21 +6,23 @@ import java.util.List;
 class OrderForCreator extends OrderCreator {
 
     private int nbrOfExpectedCustomers;
-    private final List<Order> allOrdersFor = new ArrayList<Order>();
+    private final List<OrderFor> allOrdersFor = new ArrayList<OrderFor>();
 
-    OrderForCreator(Order order, List<Order> allOrdersFor, int nbrOfExpectedCustomers) {
+    OrderForCreator(Order order, List<OrderFor> allOrdersFor, int nbrOfExpectedCustomers) {
         super(order.tableId, order.customerName, order.content);
         this.allOrdersFor.addAll(allOrdersFor);
         this.nbrOfExpectedCustomers = nbrOfExpectedCustomers;
     }
 
-    Order create() {
+    OrderFor create() {
         OrderFor orderFor;
         if (isExist(orderContent)) {
-            orderFor = (OrderFor) getOrderFor(orderContent);
+            orderFor = getOrderFor(orderContent);
             orderFor.decrementNbrOfExpectedCustomers();
-        } else
+            System.out.println("decrement ones to " + orderFor.getNbrOfExpectedCustomers());
+        } else {
             orderFor = new OrderFor(new NormalOrder(tableId, customerName, orderContent), nbrOfExpectedCustomers);
+        }
         return orderFor;
     }
 
@@ -28,13 +30,11 @@ class OrderForCreator extends OrderCreator {
         return getOrderFor(orderContent) != null;
     }
 
-    private Order getOrderFor(String orderContent) {
-        Order orderFor = null;
-        for (Order order : allOrdersFor)
-            if (order.content.equals(orderContent)) {
-                orderFor = order;
-                break;
+    private OrderFor getOrderFor(String orderContent) {
+        for (OrderFor orderFor : allOrdersFor)
+            if (orderFor.content.equals(orderContent)) {
+                return orderFor;
             }
-        return orderFor;
+        return null;
     }
 }

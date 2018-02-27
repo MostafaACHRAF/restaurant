@@ -11,6 +11,8 @@ class SameOrderCreator extends OrderCreator {
             System.out.println("Error no previous orders");
             orderContent = "null";
         }
-        return new NormalOrder(tableId, customerName, orderContent);
+        Order order = new NormalOrder(tableId, customerName, orderContent);
+        order.type = "SameOrder";
+        return order;
     }
 }
