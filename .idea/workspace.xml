@@ -26,8 +26,8 @@
       <file leaf-file-name="Restaurant.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/Restaurant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding>
                 <element signature="e#442#443#0" expanded="true" />
                 <element signature="e#507#508#0" expanded="true" />
@@ -39,12 +39,10 @@
       <file leaf-file-name="Waiter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/Waiter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="901">
               <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3326#3327#0" expanded="true" />
-                <element signature="e#3379#3380#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,7 +61,7 @@
       <file leaf-file-name="SameOrder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/SameOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="68">
               <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
               <folding>
                 <element signature="e#114#115#0" expanded="true" />
@@ -101,10 +99,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
               <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding>
-                <element signature="e#915#916#0" expanded="true" />
-                <element signature="e#971#972#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,6 +137,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>D:\Mes exercices-\r</find>
+      <find>println</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,7 +154,7 @@
         <option value="$PROJECT_DIR$/src/main/java/java/Restaurant.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/CustomerOrder.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RestaurantTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AppConfiguration/ServiceManConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/ServiceMan.java" />
         <option value="D:/restaurant/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -169,9 +165,9 @@
         <option value="$PROJECT_DIR$/src/main/java/service/NormalOrder.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/EmptyOrder.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/SameOrder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/OrderFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/OrderFor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AppConfiguration/ServiceManConfig.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RestaurantTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/OrderFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/OrderForCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/Waiter.java" />
       </list>
@@ -190,7 +186,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-5" />
     <option name="width" value="933" />
     <option name="height" value="654" />
@@ -213,7 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -273,8 +268,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -466,6 +462,33 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
     <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JUnit.RestaurantTest.createOrder" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.RestaurantTest.failedCreationBecauseNotEveryoneOrdered" />
@@ -518,67 +541,66 @@
     <history-entry file="RestaurantTest - 2018.02.28 at 15h 26m 16s.xml">
       <configuration name="RestaurantTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.02.27 at 07h 44m 10s.xml">
+    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.02.28 at 21h 16m 02s.xml">
       <configuration name="RestaurantTest.failedCreationBecauseNotEnoughPeopleForADishFor2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.02.27 at 07h 45m 09s.xml">
+    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.02.28 at 21h 18m 23s.xml">
       <configuration name="RestaurantTest.failedCreationBecauseNotEnoughPeopleForADishFor2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.02.27 at 07h 46m 28s.xml">
+    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.02.28 at 21h 19m 31s.xml">
       <configuration name="RestaurantTest.failedCreationBecauseNotEnoughPeopleForADishFor2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.02.27 at 07h 47m 35s.xml">
+    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.02.28 at 21h 22m 20s.xml">
       <configuration name="RestaurantTest.failedCreationBecauseNotEnoughPeopleForADishFor2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.02.27 at 07h 49m 19s.xml">
+    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.03.01 at 07h 26m 40s.xml">
       <configuration name="RestaurantTest.failedCreationBecauseNotEnoughPeopleForADishFor2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.02.27 at 17h 09m 14s.xml">
+    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.03.01 at 07h 29m 18s.xml">
       <configuration name="RestaurantTest.failedCreationBecauseNotEnoughPeopleForADishFor2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.02.27 at 17h 28m 18s.xml">
+    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.03.01 at 07h 33m 39s.xml">
       <configuration name="RestaurantTest.failedCreationBecauseNotEnoughPeopleForADishFor2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.02.27 at 17h 35m 38s.xml">
+    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.03.01 at 07h 41m 59s.xml">
       <configuration name="RestaurantTest.failedCreationBecauseNotEnoughPeopleForADishFor2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantTest_failedCreationBecauseNotEveryoneOrdered - 2018.02.27 at 17h 09m 10s.xml">
-      <configuration name="RestaurantTest.failedCreationBecauseNotEveryoneOrdered" configurationId="JUnit" />
+    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.03.01 at 07h 46m 14s.xml">
+      <configuration name="RestaurantTest.failedCreationBecauseNotEnoughPeopleForADishFor2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="65079000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-5" y="0" width="933" height="654" extended-state="1" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30414745" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36038962" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2857143" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1977612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20160367" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36038962" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -593,20 +615,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/Waiter.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/RestaurantTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,7 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,7 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -714,7 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -750,7 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -811,7 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -826,37 +833,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/SameOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-          <folding>
-            <element signature="e#114#115#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/EmptyOrder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/NormalOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/OrderFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -872,6 +852,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RestaurantTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/Restaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RestaurantTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="43" column="44" lean-forward="true" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/Waiter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/OrderForCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AppConfiguration/ServiceManConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -880,26 +905,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/OrderForCreator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/OrderCreator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#915#916#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/Waiter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3326#3327#0" expanded="true" />
-            <element signature="e#3379#3380#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

@@ -7,7 +7,7 @@ class OrderFactory {
 
     private String customerName;
     private String customerOrder;
-    private List<Order> orders = new ArrayList<Order>();
+    private List<Order> orders = new ArrayList<>();
 
     OrderFactory(List<Order> orders) {
         this.orders.addAll(orders);
@@ -18,9 +18,7 @@ class OrderFactory {
         Order order = new NormalOrder(tableId, customerName, customerOrder);
 
         if (isOrderFor(customerOrder)) {
-            OrderFor orderFor = new OrderForCreator(order, getAllOrdersFor(), getNumberOfExpectedCustomersFor()).create();
-            System.out.println("--*--not exist before " + orderFor.getNbrOfExpectedCustomers());
-            return orderFor;
+            return new OrderForCreator(order, getAllOrdersFor(), getNumberOfExpectedCustomersFor()).create();
         } else if (isSame(customerOrder)) {
             order.content = getLastCustomerOrderContent();
             return new SameOrderCreator(order).create();
@@ -35,7 +33,7 @@ class OrderFactory {
     }
 
     private List<OrderFor> getAllOrdersFor() {
-        List<OrderFor> allOrdersFor = new ArrayList<OrderFor>();
+        List<OrderFor> allOrdersFor = new ArrayList<>();
         for (Order order : orders)
             if (order instanceof OrderFor)
                 allOrdersFor.add((OrderFor) order);

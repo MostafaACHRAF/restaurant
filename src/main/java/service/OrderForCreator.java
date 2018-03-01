@@ -15,14 +15,15 @@ class OrderForCreator extends OrderCreator {
     }
 
     OrderFor create() {
-        OrderFor orderFor;
         if (isExist(orderContent)) {
-            orderFor = getOrderFor(orderContent);
-            orderFor.decrementNbrOfExpectedCustomers();
-        } else {
-            orderFor = new OrderFor(new NormalOrder(tableId, customerName, orderContent), nbrOfExpectedCustomers);
+            OrderFor previousOrderFor = getOrderFor(orderContent);
+            if (previousOrderFor != null) {
+                previousOrderFor.decrementNbrOfExpectedCustomers();
+                this.nbrOfExpectedCustomers = previousOrderFor.getNbrOfExpectedCustomers();
+            }
         }
-        return orderFor;
+        System.out.println("decrement one........ => " + customerName + " * " + nbrOfExpectedCustomers);
+        return new OrderFor(new NormalOrder(tableId, customerName, orderContent), nbrOfExpectedCustomers);
     }
 
     private boolean isExist(String orderContent) {
