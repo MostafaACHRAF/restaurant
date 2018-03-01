@@ -6,7 +6,7 @@ import java.util.List;
 class OrderForCreator extends OrderCreator {
 
     private int nbrOfExpectedCustomers;
-    private final List<OrderFor> allOrdersFor = new ArrayList<OrderFor>();
+    private final List<OrderFor> allOrdersFor = new ArrayList<>();
 
     OrderForCreator(Order order, List<OrderFor> allOrdersFor, int nbrOfExpectedCustomers) {
         super(order.tableId, order.customerName, order.content);
@@ -15,15 +15,15 @@ class OrderForCreator extends OrderCreator {
     }
 
     OrderFor create() {
-        OrderFor orderFor;
         if (isExist(orderContent)) {
-            orderFor = getOrderFor(orderContent);
-            orderFor.decrementNbrOfExpectedCustomers();
-            System.out.println("decrement ones to " + orderFor.getNbrOfExpectedCustomers());
-        } else {
-            orderFor = new OrderFor(new NormalOrder(tableId, customerName, orderContent), nbrOfExpectedCustomers);
+            OrderFor previousOrderFor = getOrderFor(orderContent);
+            if (previousOrderFor != null) {
+                previousOrderFor.decrementNbrOfExpectedCustomers();
+                this.nbrOfExpectedCustomers = previousOrderFor.getNbrOfExpectedCustomers();
+            }
         }
-        return orderFor;
+        System.out.println("decrement one........ => " + customerName + " * " + nbrOfExpectedCustomers);
+        return new OrderFor(new NormalOrder(tableId, customerName, orderContent), nbrOfExpectedCustomers);
     }
 
     private boolean isExist(String orderContent) {
