@@ -1,15 +1,14 @@
 package service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 abstract class AbstractOrderCreator {
+    AbstractOrder order;
+    static Logger logger = LoggerFactory.getLogger(AbstractOrder.class);
 
-    int tableId;
-    String customerName;
-    String orderContent;
-
-    AbstractOrderCreator(int tableId, String customerName, String orderContent) {
-        this.tableId = tableId;
-        this.customerName = customerName;
-        this.orderContent = orderContent;
+    AbstractOrderCreator(AbstractOrder order) {
+        this.order = order;
     }
 
     abstract AbstractOrder create();

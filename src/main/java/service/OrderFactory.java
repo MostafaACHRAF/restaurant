@@ -1,5 +1,7 @@
 package service;
 
+import AppConfiguration.WaiterConfig;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,10 +9,10 @@ class OrderFactory {
 
     private String customerName;
     private String customerOrder;
-    private List<AbstractOrder> abstractOrders = new ArrayList<>();
+    private List<AbstractOrder> orders = new ArrayList<>();
 
-    OrderFactory(List<AbstractOrder> abstractOrders) {
-        this.abstractOrders.addAll(abstractOrders);
+    OrderFactory(List<AbstractOrder> orders) {
+        this.orders.addAll(orders);
     }
 
     AbstractOrder create(int tableId, String customerSays) {
@@ -27,26 +29,40 @@ class OrderFactory {
     }
 
     private void extractDataFrom(String customerSays) {
-        String[] extractedData = customerSays.split(": ");
-        this.customerName = extractedData[0];
-        this.customerOrder = extractedData[1];
+        String[] extractedData = customerSays.split(WaiterConfig.CUSTOMER_ORDER_SEPARATOR);
+        this.customerName = extractedData[WaiterConfig.CUSTOMER_NAME_INDEX];
+        this.customerOrder = extractedData[WaiterConfig.ORDER_CONTENT_INDEX];
+    }
+
+    private boolean isOrderFor(String customerOrder) {
+        String[] orderContentDetails = customerOrder.split(WaiterConfig.ORDER_FOR_SEPARATOR);
+        return  hasLengthOfOrderFor(orderContentDetails) && hasKeyWordFOR(orderContentDetails);
+    }
+
+    private boolean hasLengthOfOrderFor(String[] orderContentDetails) {
+        return orderContentDetails.length == WaiterConfig.ORDER_FOR_PARTS_COUNT;
+    }
+
+    private boolean hasKeyWordFOR(String[] orderContentDetails) {
+        return orderContentDetails[WaiterConfig.ORDER_FOR_KEY_WORD_INDEX].equals(WaiterConfig.ORDER_FOR_KEY_WORD);
     }
 
     private List<OrderFor> getAllOrdersFor() {
         List<OrderFor> allOrdersFor = new ArrayList<>();
-        for (AbstractOrder abstractOrder : abstractOrders)
-            if (abstractOrder instanceof OrderFor)
-                allOrdersFor.add((OrderFor) abstractOrder);
+        for (AbstractOrder order : orders) {
+            if (order instanceof OrderFor) {
+                allOrdersFor.add((OrderFor) order);
+            }
+        }
         return allOrdersFor;
     }
 
-    private boolean isOrderFor(String customerOrder) {
-        String[] orderContentDetails = customerOrder.split(" ");
-        return  orderContentDetails.length == 3 && orderContentDetails[1].equals("for");
-    }
+
+
+
 
     private String getLastCustomerOrderContent() {
-       return abstractOrders.get(abstractOrders.size() - 1).content;
+       return orders.get(orders.size() - 1).content;
     }
 
     private int getNumberOfExpectedCustomersFor() {

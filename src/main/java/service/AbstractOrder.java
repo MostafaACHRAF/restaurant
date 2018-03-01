@@ -6,8 +6,6 @@ public abstract class AbstractOrder {
     String content;
     String type;
 
-    AbstractOrder(){}
-
     AbstractOrder(int tableId, String customer, String content) {
         this.tableId = tableId;
         this.customerName = customer;
@@ -21,12 +19,13 @@ public abstract class AbstractOrder {
 
     @Override
     public boolean equals(Object obj) {
-        if (!(obj instanceof AbstractOrder))
-            return false;
-        if (((AbstractOrder) obj).tableId == this.tableId)
-            if (((AbstractOrder) obj).customerName.equals(this.customerName))
-                if (((AbstractOrder) obj).content.equals(content))
-                    return true;
+        if (obj instanceof AbstractOrder) {
+            if (((AbstractOrder) obj).tableId == this.tableId) {
+                if (((AbstractOrder) obj).customerName.equals(this.customerName)) {
+                    return ((AbstractOrder) obj).content.equals(content);
+                }
+            }
+        }
         return false;
     }
 }

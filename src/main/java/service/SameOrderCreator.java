@@ -2,17 +2,15 @@ package service;
 
 class SameOrderCreator extends AbstractOrderCreator {
 
-    SameOrderCreator(AbstractOrder abstractOrder) {
-        super(abstractOrder.tableId, abstractOrder.customerName, abstractOrder.content);
+    SameOrderCreator(AbstractOrder order) {
+        super(order);
     }
 
     AbstractOrder create() {
-        if (orderContent == null) {
-            System.out.println("Error no previous orders");
-            orderContent = "null";
+        if (order.content == null) {
+            logger.info("Error !!! No previous order.");
+            return new EmptyOrder(order.tableId);
         }
-        AbstractOrder abstractOrder = new NormalOrder(tableId, customerName, orderContent);
-        abstractOrder.type = "SameOrder";
-        return abstractOrder;
+        return new NormalOrder(order.tableId, order.customerName, order.content);
     }
 }
