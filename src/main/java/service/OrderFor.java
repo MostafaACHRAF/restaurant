@@ -4,10 +4,6 @@ class OrderFor extends Order {
 
     private int nbrOfExpectedCustomers;
 
-    OrderFor(int tableId, String customerName, String content){
-        super(tableId, customerName, content);
-    }
-
     OrderFor(Order order, int nbrOfExpectedCustomers) {
         super(order.tableId, order.customerName, order.content);
         this.nbrOfExpectedCustomers = nbrOfExpectedCustomers;
