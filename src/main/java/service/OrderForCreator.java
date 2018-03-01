@@ -3,13 +3,13 @@ package service;
 import java.util.ArrayList;
 import java.util.List;
 
-class OrderForCreator extends OrderCreator {
+class OrderForCreator extends AbstractOrderCreator {
 
     private int nbrOfExpectedCustomers;
     private final List<OrderFor> allOrdersFor = new ArrayList<>();
 
-    OrderForCreator(Order order, List<OrderFor> allOrdersFor, int nbrOfExpectedCustomers) {
-        super(order.tableId, order.customerName, order.content);
+    OrderForCreator(AbstractOrder abstractOrder, List<OrderFor> allOrdersFor, int nbrOfExpectedCustomers) {
+        super(abstractOrder.tableId, abstractOrder.customerName, abstractOrder.content);
         this.allOrdersFor.addAll(allOrdersFor);
         this.nbrOfExpectedCustomers = nbrOfExpectedCustomers;
     }

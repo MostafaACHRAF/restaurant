@@ -1,17 +1,17 @@
 package service;
 
-abstract class OrderCreator {
+abstract class AbstractOrderCreator {
 
     int tableId;
     String customerName;
     String orderContent;
 
-    OrderCreator(int tableId, String customerName, String orderContent) {
+    AbstractOrderCreator(int tableId, String customerName, String orderContent) {
         this.tableId = tableId;
         this.customerName = customerName;
         this.orderContent = orderContent;
     }
 
-    abstract Order create();
+    abstract AbstractOrder create();
 
 }

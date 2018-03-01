@@ -1,14 +1,14 @@
 package service;
 
-public abstract class Order {
+public abstract class AbstractOrder {
     int tableId;
     String customerName;
     String content;
     String type;
 
-    Order(){}
+    AbstractOrder(){}
 
-    Order(int tableId, String customer, String content) {
+    AbstractOrder(int tableId, String customer, String content) {
         this.tableId = tableId;
         this.customerName = customer;
         this.content = content;
@@ -21,11 +21,11 @@ public abstract class Order {
 
     @Override
     public boolean equals(Object obj) {
-        if (!(obj instanceof Order))
+        if (!(obj instanceof AbstractOrder))
             return false;
-        if (((Order) obj).tableId == this.tableId)
-            if (((Order) obj).customerName.equals(this.customerName))
-                if (((Order) obj).content.equals(content))
+        if (((AbstractOrder) obj).tableId == this.tableId)
+            if (((AbstractOrder) obj).customerName.equals(this.customerName))
+                if (((AbstractOrder) obj).content.equals(content))
                     return true;
         return false;
     }

@@ -1,6 +1,6 @@
 package service;
 
-class NormalOrder extends Order {
+class NormalOrder extends AbstractOrder {
 
     NormalOrder(){}
 

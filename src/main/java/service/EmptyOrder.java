@@ -1,4 +1,4 @@
 package service;
 
-class EmptyOrder extends Order {
+class EmptyOrder extends AbstractOrder {
 }

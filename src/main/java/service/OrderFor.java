@@ -1,11 +1,11 @@
 package service;
 
-class OrderFor extends Order {
+class OrderFor extends AbstractOrder {
 
     private int nbrOfExpectedCustomers;
 
-    OrderFor(Order order, int nbrOfExpectedCustomers) {
-        super(order.tableId, order.customerName, order.content);
+    OrderFor(AbstractOrder abstractOrder, int nbrOfExpectedCustomers) {
+        super(abstractOrder.tableId, abstractOrder.customerName, abstractOrder.content);
         this.nbrOfExpectedCustomers = nbrOfExpectedCustomers;
         this.type = "OrderFor";
     }

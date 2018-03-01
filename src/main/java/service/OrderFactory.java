@@ -7,23 +7,23 @@ class OrderFactory {
 
     private String customerName;
     private String customerOrder;
-    private List<Order> orders = new ArrayList<>();
+    private List<AbstractOrder> abstractOrders = new ArrayList<>();
 
-    OrderFactory(List<Order> orders) {
-        this.orders.addAll(orders);
+    OrderFactory(List<AbstractOrder> abstractOrders) {
+        this.abstractOrders.addAll(abstractOrders);
     }
 
-    Order create(int tableId, String customerSays) {
+    AbstractOrder create(int tableId, String customerSays) {
         extractDataFrom(customerSays);
-        Order order = new NormalOrder(tableId, customerName, customerOrder);
+        AbstractOrder abstractOrder = new NormalOrder(tableId, customerName, customerOrder);
 
         if (isOrderFor(customerOrder)) {
-            return new OrderForCreator(order, getAllOrdersFor(), getNumberOfExpectedCustomersFor()).create();
+            return new OrderForCreator(abstractOrder, getAllOrdersFor(), getNumberOfExpectedCustomersFor()).create();
         } else if (isSame(customerOrder)) {
-            order.content = getLastCustomerOrderContent();
-            return new SameOrderCreator(order).create();
+            abstractOrder.content = getLastCustomerOrderContent();
+            return new SameOrderCreator(abstractOrder).create();
         }
-        return order;
+        return abstractOrder;
     }
 
     private void extractDataFrom(String customerSays) {
@@ -34,9 +34,9 @@ class OrderFactory {
 
     private List<OrderFor> getAllOrdersFor() {
         List<OrderFor> allOrdersFor = new ArrayList<>();
-        for (Order order : orders)
-            if (order instanceof OrderFor)
-                allOrdersFor.add((OrderFor) order);
+        for (AbstractOrder abstractOrder : abstractOrders)
+            if (abstractOrder instanceof OrderFor)
+                allOrdersFor.add((OrderFor) abstractOrder);
         return allOrdersFor;
     }
 
@@ -46,7 +46,7 @@ class OrderFactory {
     }
 
     private String getLastCustomerOrderContent() {
-       return orders.get(orders.size() - 1).content;
+       return abstractOrders.get(abstractOrders.size() - 1).content;
     }
 
     private int getNumberOfExpectedCustomersFor() {
