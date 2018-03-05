@@ -5,13 +5,22 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/restaurant.iml" afterPath="$PROJECT_DIR$/restaurant.iml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppConfiguration/ServiceManConfig.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/AbstractOrder.java" afterPath="$PROJECT_DIR$/src/main/java/service/AbstractOrder.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/AbstractOrderCreator.java" afterPath="$PROJECT_DIR$/src/main/java/service/AbstractOrderCreator.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/EmptyOrder.java" afterPath="$PROJECT_DIR$/src/main/java/service/EmptyOrder.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/NormalOrder.java" afterPath="$PROJECT_DIR$/src/main/java/service/NormalOrder.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/OrderFactory.java" afterPath="$PROJECT_DIR$/src/main/java/service/OrderFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/SameOrderCreator.java" afterPath="$PROJECT_DIR$/src/main/java/service/SameOrderCreator.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/OrderFor.java" afterPath="$PROJECT_DIR$/src/main/java/service/OrderFor.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/OrderForCreator.java" afterPath="$PROJECT_DIR$/src/main/java/service/OrderForCreator.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/Waiter.java" afterPath="$PROJECT_DIR$/src/main/java/service/Waiter.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AppConfiguration/ServiceManConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/EmptyOrder.class" afterPath="$PROJECT_DIR$/target/classes/service/EmptyOrder.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/NormalOrder.class" afterPath="$PROJECT_DIR$/target/classes/service/NormalOrder.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/Order.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/OrderCreator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/OrderFactory.class" afterPath="$PROJECT_DIR$/target/classes/service/OrderFactory.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/OrderFor.class" afterPath="$PROJECT_DIR$/target/classes/service/OrderFor.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/OrderForCreator.class" afterPath="$PROJECT_DIR$/target/classes/service/OrderForCreator.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/SameOrder.class" afterPath="$PROJECT_DIR$/target/classes/service/SameOrder.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/SameOrderCreator.class" afterPath="$PROJECT_DIR$/target/classes/service/SameOrderCreator.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/Waiter.class" afterPath="$PROJECT_DIR$/target/classes/service/Waiter.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,12 +33,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AbstractOrder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/AbstractOrder.java">
+      <file leaf-file-name="RestaurantTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RestaurantTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="23" column="83" lean-forward="true" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
+            <state relative-caret-position="370">
+              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Restaurant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/Restaurant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#507#508#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,8 +58,8 @@
       <file leaf-file-name="AbstractOrderCreator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/AbstractOrderCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+            <state relative-caret-position="187">
+              <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#259#260#0" expanded="true" />
@@ -48,38 +69,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SameOrderCreator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/SameOrderCreator.java">
+      <file leaf-file-name="Waiter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/Waiter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-              <folding>
-                <element signature="e#115#116#0" expanded="true" />
-                <element signature="e#143#144#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WaiterConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/AppConfiguration/WaiterConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+            <state relative-caret-position="170">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SameOrder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/SameOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-              <folding>
-                <element signature="e#122#123#0" expanded="true" />
-                <element signature="e#175#176#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -88,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/service/EmptyOrder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+              <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
               <folding>
                 <element signature="e#126#127#0" expanded="true" />
                 <element signature="e#220#221#0" expanded="true" />
@@ -97,14 +92,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderFor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OrderFor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/OrderFor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="71" lean-forward="false" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
+            <state relative-caret-position="340">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractOrder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/AbstractOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
               <folding>
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#442#443#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,9 +117,12 @@
       <file leaf-file-name="OrderForCreator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/OrderForCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="391">
+              <caret line="24" column="117" lean-forward="false" selection-start-line="24" selection-start-column="95" selection-end-line="24" selection-end-column="117" />
+              <folding>
+                <element signature="e#1006#1007#0" expanded="true" />
+                <element signature="e#1062#1063#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,7 +131,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/service/NormalOrder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#122#123#0" expanded="true" />
                 <element signature="e#171#172#0" expanded="true" />
@@ -133,11 +140,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderFactory.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OrderFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/OrderFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+            <state relative-caret-position="323">
+              <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#304#305#0" expanded="true" />
@@ -162,6 +169,7 @@
       <find>D:\Mes exercices-\r</find>
       <find>println</find>
       <find>abstractOrders</find>
+      <find>abstractOrder</find>
     </findStrings>
     <replaceStrings>
       <replace>orders</replace>
@@ -188,11 +196,7 @@
         <option value="$PROJECT_DIR$/src/main/java/service/Restaurant.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/SameOrder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/OrderFor.java" />
         <option value="$PROJECT_DIR$/src/test/java/RestaurantTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/OrderForCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/Waiter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/AbstractOrder.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/AbstractOrderCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/SameOrderCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/AppConfiguration/ServiceManConfig.java" />
@@ -200,6 +204,11 @@
         <option value="$PROJECT_DIR$/src/main/java/service/NormalOrder.java" />
         <option value="$PROJECT_DIR$/src/main/java/AppConfiguration/WaiterConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/OrderFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/Waiter.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/service/OrderForCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/AbstractOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/OrderFor.java" />
       </list>
     </option>
   </component>
@@ -216,7 +225,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="933" />
@@ -565,25 +574,25 @@
       <workItem from="1519630661492" duration="20096000" />
       <workItem from="1519751274323" duration="1669000" />
       <workItem from="1519830423159" duration="2328000" />
-      <workItem from="1519916678319" duration="5388000" />
+      <workItem from="1519916678319" duration="8450000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestaurantTest - 2018.02.28 at 15h 26m 16s.xml">
+    <history-entry file="RestaurantTest - 2018.03.02 at 09h 27m 13s.xml">
       <configuration name="RestaurantTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.02.28 at 21h 16m 02s.xml">
-      <configuration name="RestaurantTest.failedCreationBecauseNotEnoughPeopleForADishFor2" configurationId="JUnit" />
+    <history-entry file="RestaurantTest - 2018.03.02 at 09h 29m 18s.xml">
+      <configuration name="RestaurantTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.02.28 at 21h 18m 23s.xml">
-      <configuration name="RestaurantTest.failedCreationBecauseNotEnoughPeopleForADishFor2" configurationId="JUnit" />
+    <history-entry file="RestaurantTest - 2018.03.02 at 09h 32m 28s.xml">
+      <configuration name="RestaurantTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.02.28 at 21h 19m 31s.xml">
-      <configuration name="RestaurantTest.failedCreationBecauseNotEnoughPeopleForADishFor2" configurationId="JUnit" />
+    <history-entry file="RestaurantTest - 2018.03.02 at 09h 34m 31s.xml">
+      <configuration name="RestaurantTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.02.28 at 21h 22m 20s.xml">
-      <configuration name="RestaurantTest.failedCreationBecauseNotEnoughPeopleForADishFor2" configurationId="JUnit" />
+    <history-entry file="RestaurantTest - 2018.03.02 at 09h 45m 12s.xml">
+      <configuration name="RestaurantTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RestaurantTest_failedCreationBecauseNotEnoughPeopleForADishFor2 - 2018.03.01 at 07h 26m 40s.xml">
       <configuration name="RestaurantTest.failedCreationBecauseNotEnoughPeopleForADishFor2" configurationId="JUnit" />
@@ -602,21 +611,21 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70467000" />
+    <option name="totallyTimeSpent" value="73529000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30414745" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36038962" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36038962" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33441558" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -632,7 +641,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -652,7 +660,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -662,7 +672,7 @@
           <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
           <folding>
             <element signature="e#442#443#0" expanded="false" />
-            <element signature="e#507#508#0" expanded="false" />
+            <element signature="e#507#508#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -688,7 +698,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -698,7 +710,7 @@
           <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
           <folding>
             <element signature="e#442#443#0" expanded="false" />
-            <element signature="e#507#508#0" expanded="false" />
+            <element signature="e#507#508#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -724,7 +736,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -734,7 +748,7 @@
           <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
           <folding>
             <element signature="e#442#443#0" expanded="false" />
-            <element signature="e#507#508#0" expanded="false" />
+            <element signature="e#507#508#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -760,7 +774,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -770,7 +786,7 @@
           <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
           <folding>
             <element signature="e#442#443#0" expanded="false" />
-            <element signature="e#507#508#0" expanded="false" />
+            <element signature="e#507#508#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -781,13 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -814,7 +823,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -824,7 +835,7 @@
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="e#442#443#0" expanded="false" />
-            <element signature="e#507#508#0" expanded="false" />
+            <element signature="e#507#508#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -842,35 +853,6 @@
         <state relative-caret-position="138">
           <caret line="43" column="44" lean-forward="true" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RestaurantTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="29" column="59" lean-forward="true" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/Restaurant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="e#442#443#0" expanded="false" />
-            <element signature="e#507#508#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/Waiter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="53" lean-forward="false" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -913,29 +895,9 @@
         <state relative-caret-position="153">
           <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding>
-            <element signature="e#115#116#0" expanded="true" />
-            <element signature="e#143#144#0" expanded="true" />
+            <element signature="e#115#116#0" expanded="false" />
+            <element signature="e#143#144#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/AbstractOrderCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/AbstractOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="83" lean-forward="true" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -944,8 +906,8 @@
         <state relative-caret-position="85">
           <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
           <folding>
-            <element signature="e#122#123#0" expanded="true" />
-            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#122#123#0" expanded="false" />
+            <element signature="e#175#176#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -953,7 +915,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/service/EmptyOrder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
           <folding>
             <element signature="e#126#127#0" expanded="true" />
             <element signature="e#220#221#0" expanded="true" />
@@ -961,29 +923,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/OrderFor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="71" lean-forward="false" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
-          <folding>
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/OrderForCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/NormalOrder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#122#123#0" expanded="true" />
             <element signature="e#171#172#0" expanded="true" />
@@ -991,15 +934,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/AbstractOrderCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/Restaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/Waiter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RestaurantTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/OrderFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+        <state relative-caret-position="323">
+          <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#304#305#0" expanded="true" />
             <element signature="e#346#347#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/OrderForCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="117" lean-forward="false" selection-start-line="24" selection-start-column="95" selection-end-line="24" selection-end-column="117" />
+          <folding>
+            <element signature="e#1006#1007#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/AbstractOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/OrderFor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

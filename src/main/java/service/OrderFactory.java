@@ -57,20 +57,16 @@ class OrderFactory {
         return allOrdersFor;
     }
 
-
-
-
-
-    private String getLastCustomerOrderContent() {
-       return orders.get(orders.size() - 1).content;
-    }
-
     private int getNumberOfExpectedCustomersFor() {
-        return Integer.valueOf(customerOrder.split(" ")[2]);
+        return Integer.valueOf(customerOrder.split(WaiterConfig.ORDER_FOR_SEPARATOR)[WaiterConfig.ORDER_FOR_EXPECTED_CUSTOMERS_INDEX]);
     }
 
     private boolean isSame(String customerOrder) {
-        return customerOrder.equals("Same");
+        return customerOrder.equals(WaiterConfig.SAME_ORDER);
+    }
+
+    private String getLastCustomerOrderContent() {
+       return orders.get(orders.size() - 1).content;
     }
 
 }

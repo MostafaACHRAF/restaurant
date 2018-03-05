@@ -83,7 +83,7 @@ class Waiter {
                 return abstractOrder;
             }
         }
-        return new EmptyOrder();
+        return new EmptyOrder(tableId);
     }
 
     private int getNbrOfMissingOrders(Table table) {
